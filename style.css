@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  background-image: url('./images/pattern-bg-desktop.png');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  margin: 0;
+  height: 40vh;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: initial;
+  font-size: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#ip-input {
+  margin-right: 0;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  padding-left: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  width: 30.5rem;
+  height: 2.19rem;
+  border-radius: 15px 0 0 15px;
+  color: hsl(0, 0%, 59%);
+  cursor: pointer;
+}
+
+.custom-button {
+  border: none;
+  background-color: black;
+  display: inline-block;
+  padding: 1rem; 
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+.custom-button img {
+  width: 1rem;
+  height: 1rem;
+}
+
+#map {
+  width: 100%;
+  height: 100vh; 
+  margin: 0;
+  z-index: -1;
+}
+
+#api-output {
+  background-color: white;
+  width: 70rem;
+  height: 20rem; 
+  margin-top: 3rem;
+  border-radius: 15px;
+  padding: 2rem; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+#api-output p {
+  border-right: 2px solid #ccc; 
+  padding-right: 30px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 13rem;
+}
+
+#api-output p:last-child {
+  border-right: none; 
+}
+
+#api-output strong,
+#api-output span {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+strong {
+  color: hsl(0, 0%, 59%);
+  font-family: 'Rubik', sans-serif;
+  margin-right: 0.5rem; 
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.info {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem; 
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: url('./images/pattern-bg-mobile.png');
+    height: 40vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 14rem;
+    margin-bottom: 1rem;
+  }
+
+  #api-output {
+    width: 15rem;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #ip-input {
+    font-size: 0.8rem;
+    width: 15.5rem;
+  }
+
+  #api-output p {
+    border: 0;
+    padding-right: 25px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    text-align: center;
+  }
+}
